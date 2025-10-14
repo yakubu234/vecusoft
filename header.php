@@ -1,8 +1,13 @@
 <?php
+    // Placeholder variables for dynamic content/session checks
     $BUSINESS_NAME = "Glow Beauty Emporium";
     $PHONE_NUMBER_FULL = "+447886221372";
     $PHONE_NUMBER_DISPLAY = "+44 (0) 7886 221372";
     $EMAIL_ADDRESS = "enquiries@glowbeautyemporium.com";
+
+    // **PLACEHOLDER LOGIC: In a real environment, this is managed by PHP sessions.**
+    // For now, we assume user is NOT logged in unless navigating to the dashboard.
+    $is_logged_in = false; 
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -26,15 +31,27 @@
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .ajax-loading-placeholder {
+            min-height: 400px; /* Ensure space while loading */
+            background: #f8f8f8;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+        .ajax-loading-placeholder.loaded {
+            opacity: 1;
+            background: transparent;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <div class="preloader"><button class="vs-btn preloaderCls">Cancel Preloader</button>
+    <div class="preloader"><button class="vs-btn preloaderCls">Cancel Preloader</button>
         <div class="preloader-inner">
             <div class="loader"></div>
         </div>
-    </div> -->
-    <svg viewBox="0 0 150 150" class="svg-hidden">
+    </div><svg viewBox="0 0 150 150" class="svg-hidden">
         <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
     </svg>
     <div class="vs-menu-wrapper">
@@ -64,6 +81,8 @@
                     </li>
                     <li><a href="contact.php">Contact Us</a></li>
                     <li><a href="cart.php">Shopping Basket</a></li>
+                    <li><a href="admin_dashboard.php">Dashboard</a></li> 
+                    <li><a href="login.php">Login / Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -147,12 +166,14 @@
                                 </div>
                                 <div class="col-auto">
                                     <div class="header-icons">
-                                        <button class="searchBoxTggler"><i class="far fa-search"></i></button>
+                                        
                                         <a href="cart.php" class="icon-btn position-relative">
                                             <i class="far fa-shopping-basket"></i>
                                             <span class="badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 10px; padding: 3px 6px;">0</span>
                                         </a>
-                                        <a href="appointment.php" class="vs-btn style8 d-none d-xl-inline-block">Book Now</a>
+                                        <a href="login.php" class="vs-btn style8 d-none d-xl-inline-block">
+                                            <?php echo $is_logged_in ? 'Dashboard' : 'Login'; ?>
+                                        </a> 
                                         <button class="bar-btn sideMenuToggler d-none d-xl-inline-block"><span
                                                 class="bar"></span> <span class="bar"></span> <span
                                                 class="bar"></span></button> <button

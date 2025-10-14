@@ -23,7 +23,7 @@
                 </div>
             </div>
             
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-12">
                     <div class="filter-menu-style1 filter-menu text-center mb-50" data-layout="masonry" data-sort-by="original-order">
                         <button data-filter="*" class="active vs-btn style7">All Hair Styles</button>
