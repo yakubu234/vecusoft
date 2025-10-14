@@ -175,7 +175,8 @@
                                         <ul>
                                             <li><a href="index.php">Home</a></li>
                                             <li><a href="gallery.php">Gallery</a></li>
-                                            <li><a href="about.html">Cart</a></li>
+                                            <li><a href="shop.php">Shop</a></li>
+                                            <li><a href="shop_details.php"> Shop Details </a></li>
                                             <li><a href="about.php">About Us</a></li>
                                             <li><a href="contact.php">Contact Us</a></li>
                                         </ul>
