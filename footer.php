@@ -10,7 +10,7 @@
                                     class="fab fa-linkedin-in"></i></a></div>
                     </div>
                     <div class="col-md-5 col-lg-4">
-                        <div class="vs-logo"><a href="index.php"><img src="assets/img/logo-2.svg" alt="logo"></a></div>
+                        <div class="vs-logo"><a href="index.php"><img src="assets/img/icons/logo.png" width="120" alt="logo"></a></div>
                     </div>
                     <div class="col-md-7 col-lg-4">
                         <form action="#" class="form-style1">
@@ -25,7 +25,7 @@
         <div class="widget-area">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-md-6 col-xl-auto">
+                    <div class="col-md-4 col-xl-auto">
                         <div class="widget footer-widget">
                             <h3 class="widget_title">About Glow Beauty Emporium</h3>
                             <p class="footer-info"><i class="fal fa-map-marker-alt text-theme me-2"></i> 2 St Peters Street,
@@ -37,7 +37,7 @@
                             <p class="footer-time">Sunday to Friday <span class="time">08:00 - 20:00</span></p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-auto">
+                    <div class="col-md-2 col-xl-auto">
                         <div class="widget widget_nav_menu footer-widget">
                             <h3 class="widget_title">Important Links</h3>
                             <div class="menu-all-pages-container footer-menu">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-auto">
+                    <div class="col-md-2 col-xl-auto">
                         <div class="widget widget_nav_menu footer-widget">
                             <h3 class="widget_title">PRODUCT CATEGORIES</h3>
                             <div class="menu-all-pages-container footer-menu">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-auto">
+                    <div class="col-md-4 col-xl-auto">
                         <div class="widget footer-widget">
                             <h3 class="widget_title">Recent Post</h3>
                             <div class="recent-post-wrap">
@@ -98,8 +98,7 @@
                 <div class="row justify-content-between align-items-center">
                     <div class="col-md-auto text-center">
                         <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2023 <a
-                                href="index.php">Glow Beauty Emporium</a>. All Rights Reserved By <a
-                                href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
+                                href="index.php">Glow Beauty Emporium</a>.</p>
                     </div>
                     <div class="col-auto d-none d-md-block"><img src="assets/img/widget/cards.png" alt="cards"></div>
                 </div>

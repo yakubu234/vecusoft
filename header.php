@@ -46,16 +46,13 @@
                     <li class="menu-item-has-children"><a href="service.php">Services</a>
                         <ul class="sub-menu">
                             <li><a href="service.php">All Hair Services</a></li>
-                            <li><a href="appointment.php">Book Appointment</a></li>
-                            <li><a href="price-plan.php">Pricing</a></li>
+                            <li><a href="service-details.php">Service Details</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children"><a href="shop.php">Shop</a>
                         <ul class="sub-menu">
                             <li><a href="shop.php">All Products</a></li>
                             <li><a href="shop_details.php">Product Details</a></li>
-                            <li><a href="cart.php">Basket</a></li>
-                            <li><a href="checkout.php">Checkout</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children"><a href="blog.php">Blog</a>
@@ -65,6 +62,7 @@
                         </ul>
                     </li>
                     <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="cart.php">Shopping Basket</a></li>
                 </ul>
             </div>
         </div>
@@ -92,7 +90,7 @@
                         <div class="media-img"><a href="blog-details.php"><img
                                     src="assets/img/widget/recent-post-1-1.jpg" alt="Blog Image"></a></div>
                         <div class="media-body">
-                            <h4 class="post-title"><a class="text-inherit" href="blog-details.php">Top Hair Care Trends for 2024</a></h4>
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.php">Top Hair Care Trends for Wigs</a></h4>
                             <div class="recent-post-meta"><a href="blog.php"><i class="fas fa-calendar-alt"></i>Sept 15, 2024</a></div>
                         </div>
                     </div>
@@ -100,7 +98,7 @@
                         <div class="media-img"><a href="blog-details.php"><img
                                     src="assets/img/widget/recent-post-1-2.jpg" alt="Blog Image"></a></div>
                         <div class="media-body">
-                            <h4 class="post-title"><a class="text-inherit" href="blog-details.php">Guide to Choosing the Best Wig Style</a></h4>
+                            <h4 class="post-title"><a class="text-inherit" href="blog-details.php">Guide to Choosing the Best Extensions</a></h4>
                             <div class="recent-post-meta"><a href="blog.php"><i class="fas fa-calendar-alt"></i>Sept 01, 2024</a></div>
                         </div>
                     </div>
@@ -147,13 +145,19 @@
                                     </nav>
                                 </div>
                                 <div class="col-auto">
-                                    <div class="header-icons"></button> <a href="appointment.php"
-                                            class="vs-btn style8 d-none d-xl-inline-block">Book Now</a> <button
-                                            class="bar-btn sideMenuToggler d-none d-xl-inline-block"><span
+                                    <div class="header-icons">
+                                        <button class="searchBoxTggler"><i class="far fa-search"></i></button>
+                                        <a href="cart.php" class="icon-btn position-relative">
+                                            <i class="far fa-shopping-basket"></i>
+                                            <span class="badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 10px; padding: 3px 6px;">0</span>
+                                        </a>
+                                        <a href="appointment.php" class="vs-btn style8 d-none d-xl-inline-block">Book Now</a>
+                                        <button class="bar-btn sideMenuToggler d-none d-xl-inline-block"><span
                                                 class="bar"></span> <span class="bar"></span> <span
                                                 class="bar"></span></button> <button
                                             class="vs-menu-toggle d-inline-block d-lg-none" type="button"><i
-                                                class="fal fa-bars"></i></button></div>
+                                                class="fal fa-bars"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
