@@ -23,7 +23,7 @@
                     <thead>
                         <tr>
                             <th class="cart-col-image">Image</th>
-                            <th class="cart-col-productname">Product</th>
+                            <th class="cart-col-productname">Product Details</th>
                             <th class="cart-col-price">Price</th>
                             <th class="cart-col-quantity">Quantity</th>
                             <th class="cart-col-total">Subtotal</th>
@@ -33,23 +33,53 @@
                     <tbody>
                         <tr class="cart_item">
                             <td data-title="Product Image"><a class="woocommerce-product-thumbnail" href="shop_details.php"><img src="assets/img/product/p-1-1.png" alt="Product Image"></a></td>
-                            <td data-title="Product Name"><a class="woocommerce-product-thumbnail" href="shop_details.php">Silky Straight Human Hair</a></td>
+                            <td data-title="Product Details">
+                                <a class="woocommerce-product-thumbnail fw-bold text-dark" href="shop_details.php">Silky Straight Human Hair</a>
+                                
+                                <button class="btn btn-sm text-theme p-0 fw-normal d-block mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#details-item-1" aria-expanded="false" aria-controls="details-item-1" style="font-size: 14px;">
+                                    <i class="far fa-info-circle me-1"></i> View Specifications
+                                </button>
+
+                                <div class="collapse mt-2" id="details-item-1">
+                                    <div class="product-details-summary p-3 border rounded bg-white">
+                                        <p class="mb-1"><strong>Length:</strong> 20 inches</p>
+                                        <p class="mb-1"><strong>Color:</strong> Natural Black (1B)</p>
+                                        <p class="mb-1"><strong>Texture:</strong> Silky Straight</p>
+                                        <p class="mb-0"><strong>Material:</strong> 100% Virgin Human Hair</p>
+                                    </div>
+                                </div>
+                            </td>
                             <td data-title="Price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>99.00</span></td>
                             <td data-title="Quantity">
                                 <div class="quantity">
-                                    <input type="number" class="qty" step="1" min="1" max="10" name="cart_quantity" value="1" title="Qty">
+                                    <input type="number" class="qty" step="1" min="1" max="10" name="cart_quantity_1" value="1" title="Qty">
                                 </div>
                             </td>
                             <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>99.00</span></td>
                             <td data-title="Remove"><a href="#" class="remove"><i class="fal fa-trash-alt"></i></a></td>
                         </tr>
+
                         <tr class="cart_item">
                             <td data-title="Product Image"><a class="woocommerce-product-thumbnail" href="shop_details.php"><img src="assets/img/product/p-1-2.png" alt="Product Image"></a></td>
-                            <td data-title="Product Name"><a class="woocommerce-product-thumbnail" href="shop_details.php">Anti-Frizz Hair Serum</a></td>
+                            <td data-title="Product Details">
+                                <a class="woocommerce-product-thumbnail fw-bold text-dark" href="shop_details.php">Anti-Frizz Hair Serum</a>
+
+                                <button class="btn btn-sm text-theme p-0 fw-normal d-block mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#details-item-2" aria-expanded="false" aria-controls="details-item-2" style="font-size: 14px;">
+                                    <i class="far fa-info-circle me-1"></i> View Specifications
+                                </button>
+
+                                <div class="collapse mt-2" id="details-item-2">
+                                    <div class="product-details-summary p-3 border rounded bg-white">
+                                        <p class="mb-1"><strong>Volume:</strong> 100ml</p>
+                                        <p class="mb-1"><strong>Key Ingredient:</strong> Argan Oil & Vitamin E</p>
+                                        <p class="mb-0"><strong>Use:</strong> Conditioning and Shine for Wigs & Natural Hair</p>
+                                    </div>
+                                </div>
+                            </td>
                             <td data-title="Price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>22.00</span></td>
                             <td data-title="Quantity">
                                 <div class="quantity">
-                                    <input type="number" class="qty" step="1" min="1" max="10" name="cart_quantity" value="2" title="Qty">
+                                    <input type="number" class="qty" step="1" min="1" max="10" name="cart_quantity_2" value="2" title="Qty">
                                 </div>
                             </td>
                             <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>44.00</span></td>
@@ -83,7 +113,7 @@
                                             <li><input type="radio" id="free_shipping" name="shipping_method" value="free_shipping" class="shipping_method" checked>
                                                 <label for="free_shipping">Free Shipping (Orders over £50)</label>
                                             </li>
-                                            <li><input type="radio" id="flat_rate" name="shipping_method" value="flat_rate" class="shipping_method">
+                                            <li><input type="radio" id="flat_rate" name="shipping_method" value="flat_rate" class="shipping_method" disabled>
                                                 <label for="flat_rate">Flat Rate: <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>5.00</span></label>
                                             </li>
                                         </ul>
