@@ -147,8 +147,7 @@
                                     </nav>
                                 </div>
                                 <div class="col-auto">
-                                    <div class="header-icons"><button class="searchBoxTggler"><i
-                                                class="far fa-search"></i></button> <a href="appointment.php"
+                                    <div class="header-icons"></button> <a href="appointment.php"
                                             class="vs-btn style8 d-none d-xl-inline-block">Book Now</a> <button
                                             class="bar-btn sideMenuToggler d-none d-xl-inline-block"><span
                                                 class="bar"></span> <span class="bar"></span> <span
