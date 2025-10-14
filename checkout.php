@@ -19,6 +19,7 @@
             <div class="row">
                 <div class="col-12"><div class="woocommerce-info">Have a coupon? <a href="#" class="showcoupon">Click here to enter your code</a></div></div>
             </div>
+            
             <form action="#" method="post" class="woocommerce-checkout row">
                 
                 <div class="col-lg-6">
@@ -100,25 +101,48 @@
                                 </tr>
                             </tfoot>
                         </table>
+
+                        <div class="woocommerce-info bg-danger text-white p-3 mb-3 border-0">
+                            <p class="mb-0 fw-bold"><i class="fas fa-exclamation-triangle me-2"></i> ACTION REQUIRED FOR BANK TRANSFER:</p>
+                            <p class="mb-0">Please complete the bank transfer *before* clicking the "Place Order" button. Your order will be processed upon payment confirmation.</p>
+                        </div>
                         
                         <div class="woocommerce-checkout-payment">
                             <ul class="wc_payment_methods payment_methods methods list-unstyled">
+                                
                                 <li class="wc_payment_method payment_method_bacs">
                                     <input id="payment_method_bacs" type="radio" class="input-radio" name="payment_method" value="bacs" checked="checked">
                                     <label for="payment_method_bacs">Direct Bank Transfer</label>
-                                    <div class="payment_box payment_method_bacs"><p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p></div>
+                                    <div class="payment_box payment_method_bacs p-3 border">
+                                        <p class="mb-3">
+                                            Make your payment directly into our bank account. Use your Order ID as the payment reference.
+                                        </p>
+                                        <ul class="list-unstyled fw-bold bg-light p-3 border rounded">
+                                            <li>Account Name: **GLOW BEAUTY EMPORIUM LTD**</li>
+                                            <li>Sort Code: **04-00-03**</li>
+                                            <li>Account No: **20049509**</li>
+                                        </ul>
+                                        <p class="text-danger fw-bold mb-0">Your order will not be shipped until the funds have cleared in our account.</p>
+                                    </div>
                                 </li>
-                                <li class="wc_payment_method payment_method_cod">
-                                    <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod">
-                                    <label for="payment_method_cod">Cash on Delivery</label>
-                                    <div class="payment_box payment_method_cod" style="display:none;"><p>Pay with cash upon delivery of your hair products.</p></div>
+                                
+                                <li class="wc_payment_method payment_method_cod" title="Currently Unavailable" style="opacity: 0.6;">
+                                    <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" disabled>
+                                    <label for="payment_method_cod" style="cursor: not-allowed;">Cash on Delivery (Currently Unavailable)</label>
+                                    <div class="payment_box payment_method_cod p-3 border bg-light">
+                                        <p class="text-danger fw-bold mb-0">This payment option is currently unavailable. Please use 'Direct Bank Transfer' for your purchase today.</p>
+                                    </div>
                                 </li>
-                                <li class="wc_payment_method payment_method_paypal">
-                                    <input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="paypal">
-                                    <label for="payment_method_paypal">PayPal <img src="assets/img/card.png" alt="PayPal Accepted"></label>
-                                    <div class="payment_box payment_method_paypal" style="display:none;"><p>Pay easily via PayPal. You can pay with your credit card if you don't have a PayPal account.</p></div>
+                                
+                                <li class="wc_payment_method payment_method_paypal" title="Online Payment Coming Soon" style="opacity: 0.6;">
+                                    <input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="paypal" disabled>
+                                    <label for="payment_method_paypal" style="cursor: not-allowed;">Online Card/PayPal Payment (Coming Soon) <img src="assets/img/card.png" alt="Card Payments Accepted"></label>
+                                    <div class="payment_box payment_method_paypal p-3 border bg-light">
+                                        <p class="text-danger fw-bold mb-0">Online payment feature is currently under integration. Please use 'Direct Bank Transfer' for your purchase today.</p>
+                                    </div>
                                 </li>
                             </ul>
+                            
                             <div class="form-row place-order">
                                 <p class="form-group woocommerce-terms-and-conditions-wrapper">
                                     <input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox" id="terms" name="terms" value="1">
