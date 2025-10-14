@@ -1,109 +1,123 @@
 <?php include('header.php'); ?>
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg-3.jpg">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg-2.jpg">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Our <span class="inner-text">Portfolio</span></h1>
+                <h1 class="breadcumb-title">Glow Beauty <span class="inner-text">Hair Gallery</span></h1>
                 <div class="breadcumb-menu-wrap">
                     <ul class="breadcumb-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li>Our <span class="inner-text">Portfolio</span></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li>Gallery</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <section class="space">
+
+    <section class="space-top space-extra-bottom">
         <div class="container">
-            <div class="row gy-gx filter-active">
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="gallery-style1">
-                        <div class="gallery-img"><img src="assets/img/gallery/gal-4-1.jpg" alt="Gallery Image" class="w-100"></div>
-                        <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
-                        <div class="gallery-content"><a href="assets/img/gallery/gal-4-1.jpg" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>
-                            <h3 class="gallery-title"><a href="gallery-details.html" class="text-inherit">Thai Massage</a></h3><span class="gallery-tag">Massage</span>
+            <div class="row">
+                <div class="col-xxl-10 mx-auto text-center">
+                    <span class="sec-subtitle">Our Finest Work</span>
+                    <h2 class="sec-title">Showcasing Premium Hair Styling & Wigs</h2>
+                    <p class="fs-20 mb-4 pb-2">Explore our portfolio featuring custom wig installations, hair extensions, and expert color work performed by our specialist team.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-menu-style1 filter-menu text-center mb-50" data-layout="masonry" data-sort-by="original-order">
+                        <button data-filter="*" class="active vs-btn style7">All Hair Styles</button>
+                        <button data-filter=".cat1" class="vs-btn style7">Wig Installs</button>
+                        <button data-filter=".cat2" class="vs-btn style7">Color & Highlights</button>
+                        <button data-filter=".cat3" class="vs-btn style7">Extensions</button>
+                        <button data-filter=".cat4" class="vs-btn style7">Bridal Hair</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row filter-active gallery-wrapper">
+                
+                <div class="col-lg-4 col-md-6 mb-30 filter-item cat1">
+                    <div class="gallery-style3">
+                        <div class="gallery-img">
+                            <img src="assets/img/gallery/gal-1-1.jpg" alt="Gallery Image: Lace Wig Installation" class="w-100">
+                            <a href="gallery-details.php" class="gallery-btn"><i class="far fa-arrow-right"></i></a>
+                        </div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title h5"><a class="text-inherit" href="gallery-details.php">Lace Wig Install</a></h3>
+                            <p class="gallery-text">Category: Wig Installs</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="gallery-style1">
-                        <div class="gallery-img"><img src="assets/img/gallery/gal-4-2.jpg" alt="Gallery Image" class="w-100"></div>
-                        <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
-                        <div class="gallery-content"><a href="assets/img/gallery/gal-4-2.jpg" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>
-                            <h3 class="gallery-title"><a href="service-details.html" class="text-inherit">Body Massage</a></h3><span class="gallery-tag">Beauty</span>
+                
+                <div class="col-lg-4 col-md-6 mb-30 filter-item cat3">
+                    <div class="gallery-style3">
+                        <div class="gallery-img">
+                            <img src="assets/img/gallery/gal-1-2.jpg" alt="Gallery Image: Full Hair Extensions" class="w-100">
+                            <a href="gallery-details.php" class="gallery-btn"><i class="far fa-arrow-right"></i></a>
+                        </div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title h5"><a class="text-inherit" href="gallery-details.php">Seamless Extensions</a></h3>
+                            <p class="gallery-text">Category: Extensions</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="gallery-style1">
-                        <div class="gallery-img"><img src="assets/img/gallery/gal-4-3.jpg" alt="Gallery Image" class="w-100"></div>
-                        <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
-                        <div class="gallery-content"><a href="assets/img/gallery/gal-4-3.jpg" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>
-                            <h3 class="gallery-title"><a href="service-details.html" class="text-inherit">Skin Care</a></h3><span class="gallery-tag">Expert</span>
+
+                <div class="col-lg-4 col-md-6 mb-30 filter-item cat2">
+                    <div class="gallery-style3">
+                        <div class="gallery-img">
+                            <img src="assets/img/gallery/gal-1-3.jpg" alt="Gallery Image: Balayage Hair Color" class="w-100">
+                            <a href="gallery-details.php" class="gallery-btn"><i class="far fa-arrow-right"></i></a>
+                        </div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title h5"><a class="text-inherit" href="gallery-details.php">Custom Balayage</a></h3>
+                            <p class="gallery-text">Category: Color & Highlights</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="gallery-style1">
-                        <div class="gallery-img"><img src="assets/img/gallery/gal-4-4.jpg" alt="Gallery Image" class="w-100"></div>
-                        <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
-                        <div class="gallery-content"><a href="assets/img/gallery/gal-4-4.jpg" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>
-                            <h3 class="gallery-title"><a href="service-details.html" class="text-inherit">Health Care</a></h3><span class="gallery-tag">Beauty</span>
+
+                <div class="col-lg-4 col-md-6 mb-30 filter-item cat4">
+                    <div class="gallery-style3">
+                        <div class="gallery-img">
+                            <img src="assets/img/gallery/gal-1-4.jpg" alt="Gallery Image: Elegant Bridal Updo" class="w-100">
+                            <a href="gallery-details.php" class="gallery-btn"><i class="far fa-arrow-right"></i></a>
+                        </div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title h5"><a class="text-inherit" href="gallery-details.php">Elegant Bridal Updo</a></h3>
+                            <p class="gallery-text">Category: Bridal Hair</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="gallery-style1">
-                        <div class="gallery-img"><img src="assets/img/gallery/gal-4-5.jpg" alt="Gallery Image" class="w-100"></div>
-                        <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
-                        <div class="gallery-content"><a href="assets/img/gallery/gal-4-5.jpg" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>
-                            <h3 class="gallery-title"><a href="service-details.html" class="text-inherit">Face Care</a></h3><span class="gallery-tag">Lifestyle</span>
+
+                <div class="col-lg-4 col-md-6 mb-30 filter-item cat1">
+                    <div class="gallery-style3">
+                        <div class="gallery-img">
+                            <img src="assets/img/gallery/gal-1-5.jpg" alt="Gallery Image: Curly Wig Style" class="w-100">
+                            <a href="gallery-details.php" class="gallery-btn"><i class="far fa-arrow-right"></i></a>
+                        </div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title h5"><a class="text-inherit" href="gallery-details.php">Voluminous Curls Wig</a></h3>
+                            <p class="gallery-text">Category: Wig Installs</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="gallery-style1">
-                        <div class="gallery-img"><img src="assets/img/gallery/gal-4-6.jpg" alt="Gallery Image" class="w-100"></div>
-                        <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
-                        <div class="gallery-content"><a href="assets/img/gallery/gal-4-6.jpg" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>
-                            <h3 class="gallery-title"><a href="service-details.html" class="text-inherit">Eye litelime</a></h3><span class="gallery-tag">Classic</span>
+
+                <div class="col-lg-4 col-md-6 mb-30 filter-item cat2 cat3">
+                    <div class="gallery-style3">
+                        <div class="gallery-img">
+                            <img src="assets/img/gallery/gal-1-6.jpg" alt="Gallery Image: Vibrant Red Hair Color" class="w-100">
+                            <a href="gallery-details.php" class="gallery-btn"><i class="far fa-arrow-right"></i></a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="gallery-style1">
-                        <div class="gallery-img"><img src="assets/img/gallery/gal-4-7.jpg" alt="Gallery Image" class="w-100"></div>
-                        <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
-                        <div class="gallery-content"><a href="assets/img/gallery/gal-4-7.jpg" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>
-                            <h3 class="gallery-title"><a href="service-details.html" class="text-inherit">Ruler Massage</a></h3><span class="gallery-tag">Queen</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="gallery-style1">
-                        <div class="gallery-img"><img src="assets/img/gallery/gal-4-8.jpg" alt="Gallery Image" class="w-100"></div>
-                        <div class="gallery-shape" data-overlay="white" data-opacity="9"></div>
-                        <div class="gallery-content"><a href="assets/img/gallery/gal-4-8.jpg" class="gallery-btn popup-image"><i class="fal fa-plus"></i></a>
-                            <h3 class="gallery-title"><a href="service-details.html" class="text-inherit">Nose Massage</a></h3><span class="gallery-tag">Massage</span>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title h5"><a class="text-inherit" href="gallery-details.php">Bold Copper Color</a></h3>
+                            <p class="gallery-text">Category: Color / Extensions</p>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="text-center pt-3 mt-1"><a href="gallery.php" class="vs-btn">Load More Gallery</a></div>
         </div>
     </section>
-    <div class="bg-light-2 space-extra">
-        <div class="shape-mockup jump-reverse-img d-none d-xl-block" data-left="2%" data-top="10%"><img src="assets/img/shape/b-s-1-3.png" alt="shape"></div>
-        <div class="shape-mockup jump-img d-none d-xl-block" data-right="2%" data-bottom="8%"><img src="assets/img/shape/b-s-1-4.png" alt="shape"></div>
-        <div class="container">
-            <div class="row vs-carousel text-center" data-slide-show="6" data-lg-slide-show="4" data-md-slide-show="3" data-sm-slide-show="2" data-xs-slide-show="2">
-                <div class="col-auto"><img src="assets/img/brand/b-1-1.png" alt="brand"></div>
-                <div class="col-auto"><img src="assets/img/brand/b-1-2.png" alt="brand"></div>
-                <div class="col-auto"><img src="assets/img/brand/b-1-3.png" alt="brand"></div>
-                <div class="col-auto"><img src="assets/img/brand/b-1-4.png" alt="brand"></div>
-                <div class="col-auto"><img src="assets/img/brand/b-1-5.png" alt="brand"></div>
-                <div class="col-auto"><img src="assets/img/brand/b-1-6.png" alt="brand"></div>
-                <div class="col-auto"><img src="assets/img/brand/b-1-3.png" alt="brand"></div>
-            </div>
-        </div>
-    </div>
-    
+
 <?php include('footer.php'); ?>
